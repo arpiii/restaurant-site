@@ -44,7 +44,10 @@ header ul li {
   list-style: none;
   padding-right: 5%;
   font-family: 'Fredoka';
-  
+}
+
+header ul li a:hover {
+  color: orange;
 }
 
 a {
