@@ -1,0 +1,261 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+  font-size: 16px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+
+
+header ul li {
+  list-style: none;
+  padding-right: 5%;
+  font-family: 'Fredoka';
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+#intro {
+  font-family: 'Old Standard TT';
+  background-image: url(../cuisine/brooke-lark-08bOYnH_r_E-unsplash.jpg);
+  background-size: cover;
+  height: 1200px;
+  padding: 10% 0 0 15%;
+  box-shadow: 0px -30px 10px -10px white inset;
+}
+
+    #intro h1 {
+      font-size: 5em;
+      width: 40%;
+    }
+
+    #intro input[type=text] {
+      padding: 10px;
+      margin: 0;
+      border: 0;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      box-shadow: 0px 0px 3px 0px black;
+    }
+
+    form {
+      display: flex;
+    }
+
+    .btn {
+      background-color: orange;
+      color: white;
+      border: 0;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      box-shadow: 1.1px 0px 3px 0px black;
+      
+    }
+
+#about {
+  display: flex;
+  margin-top: 2em;
+}
+
+#about section {
+  flex: 1;
+}
+
+#aboutStory p {
+  font-family: 'Fredoka';
+}
+
+#aboutStory a {
+  padding: 1em;
+  background-color: orange;
+  color: white;
+  border: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 1.1px 0px 3px 0px black;
+  
+}
+
+#aboutImageOne {
+  background-image: url(../cuisine/brooke-lark-of0pMsWApZE-unsplash.jpg);
+  background-size: cover;
+  background-position: -40em;
+  background-repeat: no-repeat;
+  box-shadow: -100px -55px 80px 100px white inset, -100px 55px 80px 100px white inset;
+  height: 1000px;
+
+}
+
+#aboutImageTwo {
+  background-image: url(../cuisine/olga-kudriavtseva-s8J1DlRroo0-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  box-shadow: 200px 0 100px 250px white inset;
+  height: 1000px;
+}
+
+#aboutImageTwo > * {
+  width: 50%;
+}
+
+#aboutImageTwo h3 {
+  font-family: 'Fredoka';
+  color: orange;
+}
+#aboutImageTwo h2 {
+  font-family: 'Old Standard TT';
+  font-size: 4em;
+}
+
+img {
+  display: none;
+}
+
+
+/**** Our Specialty Cusine*/
+
+.specialty {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.specialty span {
+  font-family: 'Fredoka';
+  color: orange;
+  font-size: 2em;
+  align-self: center;
+}
+
+.specialty h2 {
+  font-family: 'Old Standard TT';
+  font-size: 4em;
+  align-self: center;
+}
+
+.specialty ul {
+  margin-right: 15em;
+  margin-left: 15em;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.25em;
+  font-family: 'Fredoka';
+}
+
+.specialList ul a:link {
+  color: black;
+}
+
+.specialList ul a:hover {
+  color: orange;
+}
+
+.specialList ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.specialList ul li:hover {
+  border-color: orange;
+}
+
+.specialty section + section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.specialty section img {
+  display: flex;
+  
+  height: 22em;
+  width: 22em;
+  
+}
+
+/* Book Table */
+
+.opening {
+  display: flex;
+  flex-direction: column;
+}
+
+.opening .book {
+  font-family: 'Fredoka';
+  color: orange;
+  font-size: 2em;
+  align-self: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+/* #about {
+  position: relative;
+}
+
+#about img {
+  height: 900px;
+  display: inline-block;
+}
+
+#aboutImageOne::after {
+  position: relative;
+  left: -25%;
+  mix-blend-mode: multiply;
+  box-shadow: 0 0 100px 8px white inset;
+  z-index: 1;
+}
+
+#aboutImageTwo {
+
+  z-index: 1;
+}
+
+#about h2{
+  position: absolute;
+  top: 0;
+  z-index: 3;
+} */

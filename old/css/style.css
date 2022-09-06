@@ -1,0 +1,156 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+  margin: 0;
+  float: right;
+}
+
+header li {
+  display: inline;
+  padding-right: 50px;
+  text-decoration: none;
+}
+
+.background {
+  background-image: url(../cuisine/brooke-lark-08bOYnH_r_E-unsplash.jpg);
+  background-size: cover;
+  height: 1000px;
+  z-index: -1;
+}
+
+main {
+  margin: 0;
+  height: 600px;
+  padding: 200px;
+  z-index: 1;
+}
+
+main h1 {
+  font-size: 75px;
+  width: 30%;
+}
+
+.background2 {
+  background-image: url(../cuisine/brooke-lark-of0pMsWApZE-unsplash.jpg);
+  background-repeat:no-repeat;
+  background-size:100%;
+  background-position: -850px;
+  /* box-shadow: inset 0px 0 100px 0 white; */
+  height: 800px;
+}
+
+
+main + section {
+  padding-top: 10%;
+  padding-left: 50%;
+}
+
+main + section > h2 {
+  font-size: 60px;
+  margin-right: 227px;
+}
+
+main + section > p {
+  margin-right: 200px;
+}
+
+.specialty {
+  background: rgb(243, 247, 248);
+  text-align: center;
+}
+
+.specialty li {
+  display: inline;
+  margin-left: 25px;
+}
+
+.specialty img {
+  width: 250px;
+  padding: 0 0 20px 20px;
+}
+
+.specialty section {
+  margin: 0 300px;
+}
+
+.opening {
+  text-align: center;
+
+}
+
+.opening span {
+  display: block;
+}
+
+
+.weekday {
+  float: left;
+  margin: 50px 0 0 650px;
+}
+
+.weekend {
+  float: right;
+  margin: 50px 650px 0 0;
+}
+
+.opening img {
+  height: 600px;
+  margin-top: 5%;
+}
+
+.testimonials {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.testimonials p{
+  margin: 10% 25%;
+}
+
+@media all and (max-width: 560px) {
+  * {
+    width: 100%;
+  }
+  main {
+    position: relative;
+    margin: auto;
+  }
+
+  header li {
+    display: none;
+  }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
