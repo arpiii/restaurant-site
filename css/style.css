@@ -186,6 +186,10 @@ img {
   color: black;
 }
 
+a:visited {
+  color: black;
+}
+
 .specialList ul a:hover {
   color: orange;
 }
@@ -220,11 +224,78 @@ img {
 }
 
 .opening .book {
+  margin-top: 5em;
   font-family: 'Fredoka';
   color: orange;
   font-size: 2em;
   align-self: center;
 }
+
+.opening h2 {
+  font-family: 'Old Standard TT';
+  font-size: 4em;
+  align-self: center;
+}
+
+.opening > h2 + span {
+  font-family: 'Fredoka';
+  font-size: 1.5em;
+  align-self: center;
+}
+
+.opening h2 + span + span {
+  font-size: 1.5em;
+  align-self: center;
+  color: orange;
+}
+
+.days {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.days span {
+  font-family: 'Fredoka';
+  margin-bottom: 1em;
+}
+
+.days span + span {
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.days .weekday {
+  display: flex;
+  margin-left: 20em;
+  flex-direction: column;
+}
+
+.days .weekend {
+  display: flex;
+  margin-right: 20em;
+  flex-direction: column;
+}
+
+.booking {
+  background-image: url(../cuisine/brooke-lark--F_5g8EEHYE-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+  box-shadow: 0px 0px 100px 100px white inset, -600px 0px 50px 150px white inset, 600px 0px 50px 150px white inset; 
+}
+
+/* Testimonials */
+
+
+
+/* .booking img {
+  
+  display: flex;
+  height: 70em;
+  box-shadow: 50em 50em 50em 50em red inset;
+} */
 
 /******************************************
 /* ADDITIONAL STYLES
