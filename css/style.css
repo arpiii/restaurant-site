@@ -427,7 +427,7 @@ a:visited {
 
     /* Menu */
     .menu1 {
-      width: 82%;
+      width: -webkit-fill-available;
       background-color: #fff;
       margin: 0;
       display: -ms-grid;
@@ -489,9 +489,9 @@ a:visited {
   }
 
   #aboutImageTwo {
-    background-position: 46%;
-    background-size: cover;
-    box-shadow: 100px 150px 50px 75px white inset, 0px -200px 30px 34px white inset;
+    background-position: -30%;
+    background-size: 120%;
+    box-shadow: 100px 150px 50px 75px white inset, 53px -200px 30px 34px white inset;
     height: 900px;
   }
 
@@ -511,9 +511,9 @@ a:visited {
 
   /* Specialty Cuisine */
 
-  /* .specialList {
+  .specialList {
     margin-bottom: 2em;
-  } */
+  }
 
   .specialty ul {
     margin-left: 0;
